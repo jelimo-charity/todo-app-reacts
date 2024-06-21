@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    margin: 20px;
+  }
+  
+  .header {
+    background-image: url("./images/bg-desktop-light.jpg");
+    height: 200px;
+  }
+  
+  .todosData h1 {
+    color: hsl(236, 33%, 92%);
+    letter-spacing: 10px;
+    font-size: 3rem;
+  }
+  
+  .todosData {
+    position: relative;
+    top: 10px;
+    padding: 20px;
+    position: absolute;
+    left: 30%;
+  }
+  
+  #addTodo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 98%);
+  }
+  
+  input {
+    border: none;
+    padding: 10px;
+    background-color: hsl(0, 0%, 98%);
+  }
+  
+  #addBtn {
+    margin-right: 15px;
+  }
+  
+  #addBox {
+    border: none;
+  }
+  
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .lower {
+    background-color: hsl(0, 0%, 98%);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .btns {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #editBtn, #deleteBtn {
+    padding: 10px;
+    width: 60px;
+    cursor: pointer;
+  }
+  

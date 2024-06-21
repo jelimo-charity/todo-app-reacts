@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 4%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+//   main {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//   }
+  
+  header {
+    // width: 0%;
+    height: 200px;
+    // background: url('../assets/images/bg-desktop-light.jpg') no-repeat center center/cover;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    // transform: translateX(-50%);
+    color: rgb(13, 13, 13);
+    letter-spacing: 10px;
+    font-size: 3rem;
+    margin-top: -20%;
+    margin: 0;
+  }
+  
+  .wrapper {
+    // width: 100%;
+    // max-width: 550px;
+    // padding: 2rem;
+    // background: rgb(255, 254, 254);
+    // box-shadow: 0 35px 50px rgba(194, 195, 214, 0.5);
+    // border-radius: 10px;
+    margin-top: 20px;
+    // position: relative;
+    // top: -100px; /* Adjust this value to move the wrapper down below the header */
+  }
+  
+  .theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  
+    &.light img {
+      filter: brightness(0) invert(1);
+    }
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid hsl(236, 33%, 92%);
+  }
+  
+  .round {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid hsl(236, 33%, 92%);
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  input {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .add-todo {
+    display: none;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    padding: 2rem;
+    background: rgb(255, 254, 254);
+    box-shadow: 0 35px 50px rgba(194, 195, 214, 0.5);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjust as per your design */
+  }
+  
+  .todos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+  
+  p {
+    flex: 1;
+    margin: 0;
+    padding: 0 1rem;
+    text-decoration: none;
+  }
+  
+  p.completed {
+    text-decoration: line-through;
+    color: hsl(236, 9%, 61%);
+  }
+  
+  .btns {
+    display: flex;
+  
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 0.5rem;
+      color: hsl(236, 9%, 61%);
+  
+      &:hover {
+        color: hsl(235, 21%, 11%);
+      }
+    }
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(236, 9%, 61%);
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .filter-btns {
+    margin: 0 0.5rem;
+    cursor: pointer;
+    // color: hsl(236, 9%, 61%);
+  
+    // &.active {
+    //   color: hsl(220, 98%, 61%);
+    // }
+  }
+  
+  .drag-help-info {
+    text-align: center;
+    margin-top: 2rem;
+    color: hsl(236, 9%, 61%);
+  }
+  
